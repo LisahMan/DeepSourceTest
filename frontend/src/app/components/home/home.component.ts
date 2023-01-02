@@ -11,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
+  async test() {}
   ngOnInit(): void {
     this.a = 'xyz';
+    this.test();
   }
 }
