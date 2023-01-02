@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  a: number = 'abcde';
-  b = 10 / 0;
-  Pololo() {}
+  a: boolean = false;
+  b: bool = 'qbc';
 
   constructor() {}
 
   ngOnInit(): void {
-    a = 'xyz';
+    this.a = 'xyz';
   }
 }
